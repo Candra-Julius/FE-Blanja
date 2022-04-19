@@ -1,7 +1,8 @@
 //soal 1
+let contoh = "Hallo nama saya Candra"
+
 //1. toLowerCase()
 // membuat semua huruf kecil
-let contoh = "Hallo nama saya Candra"
 let lowerCase = contoh.toLowerCase()
 console.log(lowerCase);
 
@@ -12,7 +13,7 @@ console.log(upperCase)
 
 //3. string.indexOf
 // mencari index yang memiliki kriteria tertentu
-let strIndex = contoh.indexOf("saya")
+let strIndex = contoh.indexOf("saya")!==-1
 console.log(strIndex);
 
 //4. string.replace
@@ -21,13 +22,13 @@ let strReplace = contoh.replace("saya","kamu")
 console.log(strReplace);
 
 
-
-//5. array.splice
-// merubah atau menghapus value yang dipilih(start,index,replace)
 let hari = ["senin", "selasa", "rabu", "kamis", "jumat", "sabtu"]
 let num = [1,2,3,4,5,6,7,8,9,10]
-hari.splice(6,1,"minggu")
-console.log(hari)
+
+// 5. array.splice
+// merubah atau menghapus value yang dipilih(start,index,replace)
+hari.splice(3,1)
+console.log(hari.splice(3,1))
 
 //6. array.slice
 // mengambil nilai berdasarkan index(start,end)
@@ -36,17 +37,18 @@ console.log(num1)
 
 //7. array.toString
 // merubah objek menjadi string
-console.log(hari.toString());
+let hari1 = hari.toString()
+console.log(typeof(hari1));
 
 //8. array.push 
 // memasukan nilai baru kedalam array/objek dan diletakan dinilai akhir
-hari.push("hari")
+hari.push("minggu")
 console.log(hari);
 
 //9. array.shift
 // mengambil index 0 dalam objek
 let shifted = hari.shift();
-console.log(shifted)
+console.log(hari)
 
 
 
@@ -54,7 +56,7 @@ console.log(shifted)
 // merubah number menjadi string
 let a = 123454321
 let b = a.toString()
-console.log(b);
+console.log(typeof(b));
 
 //soal 2
 const nama = [
@@ -65,12 +67,20 @@ const nama = [
     "Ella", "Faith", "Olivia", "Penelope"
 ]   
 
-    const searchName = (str, n, m) => {
-        return nama.filter(function (lowerCased) {
+    const searchName = (str, n, callback) => {
+        let result = []
+        result = nama.filter(function (lowerCased) {
             return lowerCased.toLowerCase().indexOf(str.toLowerCase())!==-1
-        }).slice(m,n)
+        }).slice(0,n)
+
+        callback(result)
+
     }
-    console.log(searchName("an",3));
+
+    printHasil = (arr) => {
+        console.log(arr)
+    }
+    searchName("an",3,printHasil)
 
 // soal 3
 
@@ -90,5 +100,3 @@ const seleksiNilai = (nilaiAwal, nilaiAkhir)=>{
     }
 
 console.log(seleksiNilai(5,20))
-
-
