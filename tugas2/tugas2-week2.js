@@ -74,7 +74,7 @@ const nama = [
         }).slice(0,n)
 
         callback(result)
-return
+    return
     }
 
     printHasil = (arr) => {
