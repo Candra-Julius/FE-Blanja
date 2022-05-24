@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="selling-product.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> 
+    <title>selling product</title>
+</head>
+<body>
+<header id="container">
+    <nav>
+        <div id="section1">
+            <div id="logo">
+                <img id="logo-img" src="/Blanja-app/pict/Logo.png" alt="logo">
+                <span id="logo-text">Blanja</span>
+        </div>
+            <input id="search-bar" placeholder="Search" type="input">
+            <img  src="/Blanja-app/pict/filter-6555 (1).png" alt="filter" id="filter-img">
+    </div>
+    
+        <ul id="section2">
+            <li><a href="/Blanja-app/mybag/mybag.html">
+                <img id="basket" src="/Blanja-app/pict/shopping-cart-10942.png" alt="basket" >
+            </a></li>
+            <li><a>
+                <img id="notif" src="/Blanja-app/pict/notification-bell-13112.png" alt="notify" href="#">
+            </a></li>
+            <li><a>
+                <img id="message" src="/Blanja-app/pict/mail-142.png" alt="message" href="#">
+            </a></li>
+            <li><a href="/Blanja-app/profile/profile.html">
+                <img  id="profile" src="/Blanja-app/pict/christian-buehner-DItYlc26zVI-unsplash 1.png" alt="profile">
+            </a></li>
+        </ul>
+    </nav>
+</header>
+<main id="swup" class="transition-fade">
+<div id="Mcontainer">
+    <div id="sect1">
+        <div id="ava">
+            <img alt="avatar" src="/Blanja-app/pict/christian-buehner-DItYlc26zVI-unsplash 1 (1).png">
+            <div>
+                <p><strong>Johanes Mikael</strong></p>
+                <img alt="Ubah profile" src="/Blanja-app/pict/pencil-327.png">
+                <span>Ubah profile</span>
+            </div>
+        </div>
+        <div id="menu">
+            <div id="store" class="menu-item">
+                <img alt="store" src="/Blanja-app/pict/home-161.png">
+                <p><strong>store</strong></p>
+            </div>
+            <div id="product" class="menu-item">
+                <img alt="product" src="/Blanja-app/pict/delivery-box-11392.png">
+                <div>
+                    <p class="color-black"><strong>Product</strong></p>
+                    <p><strong>My product</strong></p>
+                    <p class="color-black"><strong>Selling product</strong></p>
+                </div>
+            </div>
+            <div id="order" class="menu-item">
+                <img alt="Order" src="/Blanja-app/pict/black-shopping-cart-10926.png">
+                <p><strong>Order</strong></p>
+            </div>
+        </div>
+    </div>
+    <div id="sect2">
+        <form>
+        <div id="inventory">
+            <h3>Inventory</h3>
+            <div class="line"></div>
+            <div id="goods">
+                <label for="nameG">Name of goods</label>
+                <input type="input" id="nameG">
+            </div>
+        </div>
+        <div id="item-detail">
+            <h3>Item detail</h3>
+            <div class="line"></div>
+            <div id="detail">
+                <label for="unit">Unit price</label>
+                <input type="input" id="unit" class="input">
+                <label for="stock">Stock</label>
+                <input type="number" id="stock" class="input" min="0" placeholder="Buah">
+                <div>
+                    <legend>Stock</legend>
+                    <input type="radio" name="baru-bekas" id="baru">
+                    <label for="baru">Baru</label>
+                    <input type="radio" name="baru-bekas" id="bekas">
+                    <label for="bekas">Bekas</label>
+                </div>
+            </div>
+        </div>
+        <div id="photo">
+            <h3>Photo of goods</h3>
+            <div class="line"></div>
+            <div id="pict">
+                <img alt="Photo-here" src="/Blanja-app/pict/block-10012.png" id="mainP">
+                <img alt="Photo-here" src="/Blanja-app/pict/block-10012.png">
+                <img alt="Photo-here" src="/Blanja-app/pict/block-10012.png">
+                <img alt="Photo-here" src="/Blanja-app/pict/block-10012.png">
+                <img alt="Photo-here" src="/Blanja-app/pict/block-10012.png" id="lastP">
+            </div>
+            <div class="line"></div>
+            <div id="upload">
+                <label for="upload-photo">Upload Photo</label>
+                <input id="upload-photo" type="file" accept=".jpeg, .jpg, .png">
+            </div>
+        </div>
+        <div id="description">
+            <label for="desc"><h3>Description</h3></label>
+            <div class="line"></div>
+            <div id="textarea">
+                <div id="text-opt">
+                    <img alt="#" src="/Blanja-app/pict/Screenshot (86) 1.png">
+                </div>
+                <textarea id="desc"></textarea>
+            </div>
+        </div>
+        <div id="submit">
+            <button type="submit" >Jual</button>
+        </div>
+    </form>
+    </div>
+</div>
+
+
+</main>
+</body>
+</html>

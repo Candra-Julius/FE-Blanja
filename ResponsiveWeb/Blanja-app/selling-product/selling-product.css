@@ -1,0 +1,343 @@
+html, body {
+    padding:0;
+    margin:0;
+    font-family: 'Metropolis';
+    background-color: #E5E5E5;
+}
+
+/* navbar */
+
+#container {
+    display: flex;
+    justify-content: center;
+    width:100%;
+    height:65px;
+}
+
+nav {
+    position:fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height:50px;
+    padding: 15px;
+    margin-top: -15px;
+    background-color: #fff;
+}
+
+#logo {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 650;
+    color: #DB3022;
+    cursor: pointer;
+}
+#logo-img {
+    width: 50%
+}
+#section1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:start;
+    width:68%;
+
+}
+#search-bar {
+    width: 450px;
+    height:30px;
+    border: 3px solid #9B9B9B;
+    border-radius: 24px;
+    margin:5px
+}
+#filter-img {
+    cursor: pointer;
+}
+
+#section2 {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width:32%;
+    margin-right: -15px
+}
+li {
+    list-style: none;
+    margin:5px;
+    font-style: none;
+}
+a {
+    text-decoration: none;
+}
+#login {
+    border: 3px solid #DB3022;
+    background-color:  #DB3022;
+    color:white;
+    text-align: center;
+    width: 6rem;
+    height: 26px;
+    padding-top: 10px;
+    border-radius: 25px;
+}
+#signup {
+    color:#9B9B9B;
+    border: 3px solid #9B9B9B;
+    text-align: center;
+    width: 6rem;
+    height: 26px;
+    padding-top: 10px;
+    border-radius: 25px;
+}
+#basket, #notif, #message {
+    width:80%;
+    cursor: pointer;
+}
+#profile {
+    border-radius: 50%;
+    cursor: pointer;
+}
+@media (max-width: 1000px) {
+    #signup, #login {
+        width:70px;
+        height:15px;
+        padding-bottom: 10px;
+    }
+    #search-bar {
+        width:250px;
+    }
+    #logo{
+        flex-direction: column;
+        width:50px;
+        font-size:20px ;
+    }
+}
+
+@media (max-width: 640px) {
+    #signup, #login {
+        width:50px;
+        height:10px;
+        padding-bottom: 7px;
+        font-size:14px ;
+    }
+    #search-bar {
+        width:200px;
+    }
+}
+
+/* main */
+#Mcontainer {
+    /* background-color: aqua; */
+    width:82%;
+    height: 2000px;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+}
+#sect1 {
+    background-color: #fff;
+    width:245px;
+    padding-left:20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#ava {
+    /* background-color: brown; */
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width:220px;
+    margin-top: 50px;
+}
+#ava > img {
+    border-radius: 50%;
+    width:60px;
+}
+#ava p {
+    font-size: 16px;
+}
+#menu {
+    width:220px;
+    display:flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+.menu-item {
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: start;
+    font-size: 14px;
+    font-weight: 500;
+    color:#9B9B9B;
+    margin-bottom:20px;
+    cursor: pointer;
+}
+.menu-item img {
+    margin-right: 10px;
+    position:relative;
+    top:5px;
+}
+.color-black {
+    color:#000
+}
+#inventory:hover, #item-detail:hover {
+    box-shadow: 0px 0px 20px rgba(115, 115, 115, 0.25);
+}
+#inventory {
+    background-color:white;
+    width:730px;
+    display:flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-top: 50px;
+    margin-left: 45px;
+    border-radius: 4px;
+    padding-bottom: 40px;
+}
+.line {
+    width:100%;
+    border: 1px solid #9B9B9B;
+    margin: 30px 0 30px 0;
+}
+#goods {
+    display: flex;
+    flex-direction: column;
+    color:#9B9B9B;
+}
+#goods input {
+    width: 348px;
+    height:40px;
+    border: 1px solid #9B9B9B;
+    border-radius: 4px;
+    margin-top: 8px;
+}
+#item-detail {
+    background-color:white;
+    width:730px;
+    display:flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-top: 50px;
+    margin-left: 45px;
+    border-radius: 4px;
+    padding-bottom: 40px;
+}
+#detail {
+    display:flex;
+    flex-direction: column;
+    color:#9B9B9B;
+}
+#detail legend {
+    margin-bottom: 16px;
+}
+.input {
+    width: 348px;
+    height: 40px;
+    margin-top: 8px;
+    margin-bottom: 30px;
+    text-align: right;
+    border-radius: 4px;
+    border: 1px solid #9B9B9B;
+}
+#photo {
+    background-color:white;
+    width:730px;
+    display:flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-top: 50px;
+    margin-left: 45px;
+    border-radius: 4px;
+    padding-bottom: 40px;
+}
+#pict {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+#pict #mainP {
+    width:140px;
+    margin-right:18px;
+    margin-left: 30px;
+}
+#pict img {
+    width:120px;
+    margin-right:14px;
+}
+#photo label {
+    cursor: pointer;
+    height: 18px;
+    width: 160px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    border:3px solid #9B9B9B;
+    border-radius:25px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    /* Style as you please, it will become the visible UI component. */
+}
+#upload {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#upload-photo {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+#description {
+    background-color:white;
+    width:730px;
+    display:flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-top: 50px;
+    margin-left: 45px;
+    border-radius: 4px;
+    padding-bottom: 40px;
+}
+#textarea img{
+    border:1px solid #9B9B9B;
+    margin-bottom:-4px;
+    padding-right: 440px;
+}
+textarea {
+    margin:0;
+    border:1px solid #9B9B9B;
+    /* border-bottom: none; */
+    border-radius: 0 0 4px 4px ;
+    width:644px;
+    height:250px
+}
+#submit {
+    display:flex;
+    justify-content: end;
+    margin-top: 50px;
+}
+#submit button {
+    width:110px;
+    height:40px;
+    background-color: #DB3022;
+    color:#fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    border:none;
+    border-radius: 25px;
+}
+.transition-fade {
+    opacity: 1;
+    transition: 500ms;
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+}

@@ -1,0 +1,161 @@
+#container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1em auto;
+    font-family: 'MetropolisRegular';
+}
+#logo-img {
+    width:35.85px;
+    height: 50px;
+}
+#logo-text {
+    position:relative;
+    color:#DB3022;
+    font-weight: 750;
+
+    font-size: 28px;
+    line-height: 20px;
+    bottom:10px;
+    font-family: 'MetropolisRegular';
+}#customer1 > a {
+    color:#9B9B9B;
+}
+#customer1 {
+    border: 1px solid #9B9B9B;
+    
+    position:relative;
+    width: 123px;
+    height: 48px;
+    top: 25px;
+    left: 100px;
+    padding-top: 4px;
+    padding-bottom: 0;
+    border-radius: 4px 0px 0px 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'MetropolisRegular';
+}
+#seller1 > a {
+    color: white;
+}
+#seller1 {
+    border: 1px solid #DB3022;
+    background-color:  #DB3022;
+    width: 123px;
+    height: 48px;
+    position: relative;
+    bottom: 29px;
+    left: 224px;
+    padding-top: 4px;
+    padding-bottom:0;
+    border-radius: 0px 4px 4px 0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'MetropolisRegular';
+}
+
+#customer > a {
+    
+    color: white;
+}
+#customer {
+
+    border: 1px solid #DB3022;
+    background-color:  #DB3022;
+    position:relative;
+    width: 123px;
+    height: 48px;
+    top: 25px;
+    left: 100px;
+    padding-top: 4px;
+    padding-bottom: 0;
+    border-radius: 4px 0px 0px 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'MetropolisRegular';
+}
+#seller > a {
+    color:#9B9B9B;
+}
+#seller {
+    border: 1px solid #9B9B9B;
+    width: 123px;
+    height: 48px;
+    position: relative;
+    bottom: 29px;
+    left: 224px;
+    padding-top: 4px;
+    padding-bottom:0;
+    border-radius: 0px 4px 4px 0px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'MetropolisRegular';
+}
+a{
+    color:  #DB3022;
+    text-decoration: none;
+}
+.input-box {
+    border: 1px solid #9B9B9B;
+    width: 400px;
+    height: 48px;
+    border-radius: 4px;
+    margin: 10px;
+}
+button {
+    margin-top: 50px;
+    width: 401px;
+    height: 45px;
+    border-radius: 25px;
+    background-color: #DB3022;
+    color: white;
+    font-family: 'MetropolisRegular';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    border-style: none;
+}
+.transition-fade {
+    opacity: 1;
+    transition: 100ms;
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    #container {
+        width:auto;
+        height: auto;
+        /* padding-left: 10px;
+        padding-right: 10px; */
+    }
+    .input-box {
+        width: 300px;
+        height: 35px;
+        margin-top: 5px;
+    }
+    #seller, #seller1  {
+        width:100%;
+        left: 52.5px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    #customer, #customer1 {
+        width:100%;
+        right: 52.5px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    button {
+        width: 300px;
+    }
+}

@@ -1,0 +1,129 @@
+*, html, body {
+    padding:0;
+    margin:0;
+    font-family: 'Metropolis';
+}
+
+/* navbar */
+
+#container {
+    display: flex;
+    justify-content: center;
+    background-color: #E5E5E5;
+    width:100%;
+    /* height:100vh; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height:50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    background-color: #fff;
+}
+
+#logo {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 650;
+    color: #DB3022;
+    cursor: pointer;
+}
+#logo-img {
+    width: 50%
+}
+#section1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:start;
+    width:68%;
+
+}
+#search-bar {
+    width: 450px;
+    height:38px;
+    border: 3px solid #9B9B9B;
+    border-radius: 24px;
+    margin:5px
+}
+#filter-img {
+    cursor: pointer;
+}
+
+#section2 {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width:32%;
+    margin-right: -15px
+}
+li {
+    list-style: none;
+    margin:5px;
+    font-style: none;
+}
+a {
+    text-decoration: none;
+}
+#login {
+    border: 3px solid #DB3022;
+    background-color:  #DB3022;
+    color:white;
+    text-align: center;
+    width: 6rem;
+    height: 26px;
+    padding-top: 10px;
+    border-radius: 25px;
+}
+#signup {
+    color:#9B9B9B;
+    border: 3px solid #9B9B9B;
+    text-align: center;
+    width: 6rem;
+    height: 26px;
+    padding-top: 10px;
+    border-radius: 25px;
+}
+#basket, #notif, #message {
+    width:80%;
+    cursor: pointer;
+}
+#profile {
+    border-radius: 50%;
+    cursor: pointer;
+}
+@media (max-width: 1000px) {
+    #signup, #login {
+        width:70px;
+        height:15px;
+        padding-bottom: 10px;
+    }
+    #search-bar {
+        width:250px;
+    }
+    #logo{
+        flex-direction: column;
+        width:50px;
+        font-size:20px ;
+    }
+}
+
+@media (max-width: 640px) {
+    #signup, #login {
+        width:50px;
+        height:10px;
+        padding-bottom: 7px;
+        font-size:14px ;
+    }
+    #search-bar {
+        width:200px;
+    }
+}
+
+/* main */

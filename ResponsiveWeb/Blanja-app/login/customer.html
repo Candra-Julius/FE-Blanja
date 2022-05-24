@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link href="/Blanja-app/login/login.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/metropolis" type="text/css"/>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> 
+</head>
+<body>
+    <main id="container" >
+    <div id="logo">
+        <img id="logo-img" src="/Blanja-app/pict/Logo.png" alt="logo">
+        <span id="logo-text">Blanja</span>
+    </div>
+    <p> Please login with your account</p>
+    <div id="swup" class="transition-fade">
+    <div id="switch">
+    <div id="customer">
+        <a class="switch-role" href="/Blanja-app/login/customer.html"><p>Customer</p></a>
+    </div>
+    <div id="seller">
+        <a class="switch-role" href="/Blanja-app/login/seller.html"><p>Seller</p></a>
+    </div>
+    </div>
+    <form>
+    <div id="email-box" class="input-box">
+        <input type="email" id="email" class="input-text" placeholder="       Email" required>
+    </div>
+    <div id="password-box" class="input-box">
+        <input placeholder="      Password" id="password" class="input-text" type="password" required>
+    </div>
+    <a href="/"><p  id="forgot">Forgot password?</p></a>
+    <button type="submit" id="submit" href="/Blanja-app/profile/profile.html">PRIMARY</button>
+    </form>
+    <p>Don't have a Tokopedia account?<a href="/Blanja-app/register/register-customer.html"> Register</a></p>
+    </div>
+    </main>
+    <script defer src="login.js"></script>
+</body>
+</html>
